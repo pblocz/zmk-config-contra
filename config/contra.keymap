@@ -12,15 +12,15 @@
 
         default_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |   ESC   |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |    \    |
-// |   TAB   |    A    |    S    |    D    |    F    |    G    |    H    |    J    |    K    |    L    |    ;    |    '    |
+// |   LGUI  |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |    \    |
+// |   ESC   |    A    |    S    |    D    |    F    |    G    |    H    |    J    |    K    |    L    |    ;    |    '    |
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |  ENTER  |
 // |  CTRL   |    GUI  |    ALT  |    \    |    LOWER|    SPACE          |    RAISE|    LEFT |  RIGHT  |   UP    |  DOWN   |
             bindings = <
-    &kp ESC   &kp Q     &kp W    &kp E     &kp R     &kp T      &kp Y     &kp U     &kp I     &kp O     &kp P    &kp BSPC
-    &kp TAB   &kp A     &kp S    &kp D     &kp F     &kp G      &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
-    &kp LSHFT &kp Z     &kp X    &kp C     &kp V     &kp B      &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp ENTER
-    &kp LCTRL &kp LGUI  &kp LALT &kp BSLH  &to DEFAULT &kp SPACE &trans &to NUM_MODS &kp LEFT &kp RIGHT &kp UP &kp DOWN
+    &kp TAB    &kp Q     &kp W    &kp E   &kp R              &kp T             &kp Y     &kp U              &kp I        &kp O     &kp P     &kp GRAVE
+    &kp ESC    &kp A     &kp S    &kp D   &kp F              &kp G             &kp H     &kp J              &kp K        &kp L     &kp SEMI  &kp SQT
+    &kp LSFT   &kp Z     &kp X    &kp C   &kp V              &kp B             &kp N     &kp M              &kp COMMA    &kp DOT   &kp FSLH  &kp BSLH
+    &kp LCTRL  &kp LGUI  &kp ALT  &kp ALT &lt NUM_MODS BSPC  &mt LSHIFT SPACE  &trans    &lt BT_CTRL ENTER  &mo BT_CTRL  &kp LEFT  &kp RIGHT &kp RCRTL
             >;
         };
 
@@ -34,16 +34,16 @@
     &kp GRAVE &kp N1    &kp N2   &kp N3    &kp N4    &kp N5     &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &kp DEL
     &kp TAB   &kp F1    &kp F2   &kp F3    &kp F4    &kp F5     &kp F6    &kp MINUS &kp PG_UP &kp LBKT  &kp RBKT &kp BSLH
     &kp LSHFT &kp F7    &kp F8   &kp F9    &kp F10   &kp F11    &kp F12   &kp EQUAL &kp PG_DN &kp HOME  &kp END  &kp ENTER
-    &kp LCTRL &kp LGUI  &kp LALT &reset  &to DEFAULT &kp SPACE  &trans &mo BT_CTRL &kp LEFT &kp RIGHT &kp UP   &kp DOWN
+    &kp LCTRL &kp LGUI  &kp LALT &reset    &trans    &kp SPACE  &trans    &trans    &kp LEFT  &kp RIGHT &kp UP   &kp DOWN
             >;
         };
 
         bt_control {
             bindings = <
-    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans    &trans    &trans    &trans    &trans   &trans
-    &trans    &trans    &trans   &trans    &trans    &trans     &trans    &trans    &trans    &trans    &trans   &trans
-    &trans    &trans    &trans   &trans    &trans    &trans     &trans    &trans    &trans    &trans    &trans   &trans
-    &trans    &trans    &trans   &trans    &trans    &trans     &trans    &trans    &bt BT_PRV &bt BT_NXT &trans   &trans
+    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans   &trans   &trans     &trans     &trans   &trans
+    &trans     &trans       &trans       &trans       &trans       &trans       &kp LEFT &kp DOWN &kp UP     &kp RIGHT  &trans   &trans
+    &trans     &trans       &trans       &trans       &trans       &trans       &trans   &trans   &trans     &trans     &trans   &trans
+    &trans     &trans       &trans       &trans       &trans       &trans       &trans   &trans   &bt BT_PRV &bt BT_NXT &trans   &trans
             >;
         };
     };

@@ -31,10 +31,10 @@
 // |  SHIFT  |    F7   |   F8    |   F9    |   F10   |   F11   |   F12   |    =    |  PG_DOWN|  HOME   |   END   |  ENTER  |
 // |  CTRL   |    GUI  |    ALT  |  RESET  |    LOWER|    SPACE          |    RAISE|    LEFT |  RIGHT  |   UP    |  DOWN   |
             bindings = <
-    &kp GRAVE &kp N1    &kp N2   &kp N3    &kp N4    &kp N5     &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &kp DEL
-    &kp TAB   &kp F1    &kp F2   &kp F3    &kp F4    &kp F5     &kp F6    &kp MINUS &kp PG_UP &kp LBKT  &kp RBKT &kp BSLH
-    &kp LSHFT &kp F7    &kp F8   &kp F9    &kp F10   &kp F11    &kp F12   &kp EQUAL &kp PG_DN &kp HOME  &kp END  &kp ENTER
-    &kp LCTRL &kp LGUI  &kp LALT &reset  &to DEFAULT &kp SPACE  &trans &mo BT_CTRL &kp LEFT &kp RIGHT &kp UP   &kp DOWN
+    &kp GRAVE &lt F1 N1 &lt F2 N2   &lt F3 N3    &lt F4 N4      &lt F5 N5     &lt F6 N6        &lt F7 N7      &lt F8 N8    &lt F9 N9    &lt F10 N0   &lt F12 F11
+    &kp TAB   &kp EXCL  &kp AT      &kp HASH     &kp DLLR       &kp PRCNT     &kp CARET        &kp AMPS       &kp STAR     &kp LPAR     &kp RPAR     &kp PSCRN
+    &kp LSHFT &none     &none       &none        &lt LBRC LBKT  &lt RBRC RBKT &lt UNDER MINUS  &lt PLUS EQUAL &kp PG_DN    &kp HOME     &kp END      &kp ENTER
+    &kp LCTRL &kp LGUI  &kp LALT    &reset       &kp DEL        &trans        &trans           &mo BT_CTRL    &kp LEFT     &kp RIGHT    &kp UP       &kp DOWN
             >;
         };
 

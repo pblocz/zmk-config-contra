@@ -46,9 +46,9 @@
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |  ENTER  |
 // |  CTRL   |    GUI  |    ALT  |    \    |    LOWER|    SPACE          |    RAISE|    LEFT |  RIGHT  |   UP    |  DOWN   |
             bindings = <
-    &kp TAB    &kp Q     &kp W    &kp E    &kp R              &kp T             &kp Y     &kp U              &kp I        &kp O      &kp P           &lt TILDE GRAVE
-    &kp ESC    &kp A     &kp S    &kp D    &kp F              &kp G             &kp H     &kp J              &kp K        &kp L      &lt COLON SEMI  &lt DQT SQT
-    &kp LSFT   &kp Z     &kp X    &kp C    &kp V              &kp B             &kp N     &kp M              &lt LT COMMA &lt GT DOT &lt QMARK FSLH  &lt PIPE BSLH
+    &kp TAB    &kp Q     &kp W    &kp E    &kp R              &kp T             &kp Y     &kp U              &kp I        &kp O      &kp P           &mt TILDE GRAVE
+    &kp ESC    &kp A     &kp S    &kp D    &kp F              &kp G             &kp H     &kp J              &kp K        &kp L      &mt COLON SEMI  &mt DQT SQT
+    &kp LSFT   &kp Z     &kp X    &kp C    &kp V              &kp B             &kp N     &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH  &mt PIPE BSLH
     &kp LCTRL  &kp LGUI  &kp LALT &kp LALT &lt NUM_MODS BSPC  &mt LSHIFT SPACE  &trans    &lt BT_CTRL ENTER  &mo BT_CTRL  &kp LEFT   &kp RIGHT       &kp RCTRL
             >;
         };
@@ -60,9 +60,9 @@
 // |  SHIFT  |    F7   |   F8    |   F9    |   F10   |   F11   |   F12   |    =    |  PG_DOWN|  HOME   |   END   |  ENTER  |
 // |  CTRL   |    GUI  |    ALT  |  RESET  |    LOWER|    SPACE          |    RAISE|    LEFT |  RIGHT  |   UP    |  DOWN   |
             bindings = <
-    &kp GRAVE &lt F1 N1 &lt F2 N2   &lt F3 N3    &lt F4 N4      &lt F5 N5     &lt F6 N6        &lt F7 N7      &lt F8 N8    &lt F9 N9    &lt F10 N0   &lt F12 F11
+    &kp GRAVE &mt F1 N1 &mt F2 N2   &mt F3 N3    &mt F4 N4      &mt F5 N5     &mt F6 N6        &mt F7 N7      &mt F8 N8    &mt F9 N9    &mt F10 N0   &mt F12 F11
     &kp TAB   &kp EXCL  &kp AT      &kp HASH     &kp DLLR       &kp PRCNT     &kp CARET        &kp AMPS       &kp STAR     &kp LPAR     &kp RPAR     &kp PSCRN
-    &kp LSHFT &none     &none       &none        &lt LBRC LBKT  &lt RBRC RBKT &lt UNDER MINUS  &lt PLUS EQUAL &kp PG_DN    &kp HOME     &kp END      &kp ENTER
+    &kp LSHFT &none     &none       &none        &mt LBRC LBKT  &mt RBRC RBKT &mt UNDER MINUS  &mt PLUS EQUAL &kp PG_DN    &kp HOME     &kp END      &kp ENTER
     &kp LCTRL &kp LGUI  &kp LALT    &reset       &kp DEL        &trans        &trans           &mo BT_CTRL    &kp LEFT     &kp RIGHT    &kp UP       &kp DOWN
             >;
         };

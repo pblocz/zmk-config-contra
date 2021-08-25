@@ -14,6 +14,26 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+        combo_layer_left {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&mo NUM_MODS>;
+        };
+        combo_layer_right {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&mo NUM_MODS>;
+        };
+        combo_lpar {
+            timeout-ms = <50>;
+            key-positions = <15 28>;
+            bindings = <&kp LPAR>;
+        };
+        combo_rpar {
+            timeout-ms = <50>;
+            key-positions = <21 31>;
+            bindings = <&kp RPAR>;
+        };
     };
 
     keymap {

@@ -59,7 +59,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "TAB_Z";
             #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp Z>;
+            bindings = <&kp Z>, <&kp TAB>;
             mods = <(MOD_LALT | MOD_RALT)>;
         };
     };

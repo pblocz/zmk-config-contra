@@ -55,6 +55,14 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
+        tabz: tab_z {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TAB_Z";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>, <&kp Z>;
+            mods = <(MOD_LALT | MOD_RALT)>;
+        };
+    };
     };
 
     keymap {
@@ -69,7 +77,7 @@
             bindings = <
     &kp TAB    &kp Q     &kp W      &kp E     &kp R              &kp T             &kp Y     &kp U              &kp I        &kp O      &kp P           &mt TILDE GRAVE
     &kp ESC    &hm ESC A &hm LGUI S &kp D     &hl NUM_MODS F     &kp G             &kp H     &hl NUM_MODS J     &kp K        &kp L      &mt COLON SEMI  &mt DQT SQT
-    &kp LSFT   &kp Z     &kp X      &kp C       &kp V              &kp B             &kp N     &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH  &mt PIPE BSLH
+    &kp LSFT   &tabz     &kp X      &kp C       &kp V              &kp B             &kp N     &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH  &mt PIPE BSLH
     &kp LCTRL  &kp LGUI  &kp LALT   &kp LCTRL   &lt NUM_MODS BSPC  &mt LSHIFT SPACE  &trans    &lt BT_CTRL ENTER  &kp LALT     &kp LEFT   &kp RIGHT       &kp RCTRL
             >;
         };

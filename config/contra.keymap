@@ -11,7 +11,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <14 17>; // KP: D F
+            key-positions = <14 15>; // KP: D F
             bindings = <&kp ESC>;
         };
         combo_tab {
@@ -21,7 +21,7 @@
         };
         combo_lpar {
             timeout-ms = <50>;
-            key-positions = <14 29>; // KP: D V
+            key-positions = <14 27>; // KP: D V
             bindings = <&kp LPAR>;
         };
         combo_rpar {

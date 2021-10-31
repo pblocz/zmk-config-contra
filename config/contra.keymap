@@ -154,10 +154,10 @@
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |  ENTER  |
 // |  CTRL   |    GUI  |    ALT  |    \    |    LOWER|    SPACE          |    RAISE|    LEFT |  RIGHT  |   UP    |  DOWN   |
             bindings = <
-    &kp Q     &kp W      &kp E       &kp R              &kp T             &none    &none              &kp Y              &kp U              &kp I        &kp O      &kp P
-    &hm ESC A &hm LGUI S &hm LCTL D  &hl NUM_MODS F     &kp G             &none    &none              &kp H              &hl NUM_MODS J     &hm LCTL K        &kp L      &mt SQT DQT
-    &kp Z     &kp X      &kp C       &kp V              &kp B             &none    &none              &kp N              &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH
-    &none     &none      &kp LCTRL   &lt NUM_MODS BSPC  &tabspace         &none    &trans             &tabspace          &lt BT_CTRL ENTER  &kp LALT     &none      &none
+    &kp Q      &kp W      &kp E       &kp R              &kp T             &none    &none              &kp Y              &kp U              &kp I        &kp O      &kp P
+    &hm LGUI A &hm LALT S &hm LCTL D  &hl NUM_MODS F     &kp G             &none    &none              &kp H              &hl NUM_MODS J     &hm LCTL K   &hm LALT L &mt SQT DQT
+    &kp Z      &kp X      &kp C       &kp V              &kp B             &none    &none              &kp N              &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH
+    &none      &none      &kp LCTRL   &lt NUM_MODS BSPC  &tabspace         &none    &trans             &tabspace          &lt BT_CTRL ENTER  &kp LALT     &none      &none
             >;
         };
 

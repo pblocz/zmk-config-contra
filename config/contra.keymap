@@ -157,7 +157,7 @@
     &kp Q      &kp W      &kp E       &kp R              &kp T             &mt F1 N1    &mt F4 N4          &kp Y              &kp U              &kp I        &kp O      &kp P
     &hm LGUI A &hm LALT S &hm LCTL D  &hl NUM_MODS F     &kp G             &mt F2 N2    &mt F5 N5          &kp H              &hl NUM_MODS J     &hm LCTL K   &hm LALT L &mt SQT DQT
     &kp Z      &kp X      &kp C       &kp V              &kp B             &mt F3 N3    &mt F6 N6          &kp N              &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH
-    &kp LCTRL  &kp LALT   &kp LCTRL   &lt NUM_MODS BSPC  &tabspace         &kp TAB      &trans             &mt LSHIFT ESC     &lt BT_CTRL ENTER  &kp LALT     &none      &none
+    &kp LCTRL  &kp LALT   &kp LCTRL   &lt NUM_MODS BSPC  &mt LSHIFT ESC    &kp TAB      &trans             &tabspace     &lt BT_CTRL ENTER  &kp LALT     &none      &none
             >;
         };
 

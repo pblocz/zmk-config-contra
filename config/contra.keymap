@@ -10,20 +10,20 @@
 #define CE 2
 #define CR 3
 #define CT 4
-#define CU 6
-#define CI 7
-#define CO 8
-#define CP 9
-#define CD 12
-#define CF 13
-#define CG 14
-#define CH 15
-#define CJ 16
-#define CK 17
-#define CC 22
-#define CV 23
-#define CM 26
-#define CCOMMA 27
+#define CU 8
+#define CI 9
+#define CO 10
+#define CP 11
+#define CD 14
+#define CF 15
+#define CG 16
+#define CH 19
+#define CJ 20
+#define CK 21
+#define CC 26
+#define CV 27
+#define CM 32
+#define CCOMMA 33
 
 #define QUICK_TAP_MS 150
 

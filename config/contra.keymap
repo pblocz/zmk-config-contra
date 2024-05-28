@@ -5,143 +5,240 @@
 #define DEFAULT  0
 #define NUM_MODS 1
 #define BT_CTRL  2
+#define FACTORIO_LAYER  3
+
+#define CE 2
+#define CR 3
+#define CT 4
+#define CU 6
+#define CI 7
+#define CO 8
+#define CP 9
+#define CD 12
+#define CF 13
+#define CG 14
+#define CH 15
+#define CJ 16
+#define CK 17
+#define CC 22
+#define CV 23
+#define CM 26
+#define CCOMMA 27
+
+#define QUICK_TAP_MS 150
+
+&lt {
+    quick_tap_ms = <QUICK_TAP_MS>;
+};
+
+&mt {
+    quick_tap_ms = <QUICK_TAP_MS>;
+};
 
 / {
+    macros {
+        ZMK_MACRO(enie_lower,
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
+                , <&macro_release &kp LALT>
+                ;
+        )
+        ZMK_MACRO(enie_upper,
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>
+                , <&macro_release &kp LALT>
+                ;
+        )
+        ZMK_MACRO(at_at,
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&kp AT &kp AT>
+                ;
+        )
+    };
+
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_at {
             timeout-ms = <50>;
-            key-positions = <14 15>; // KP: D F
-            bindings = <&kp ESC>;
+            key-positions = <CD CF>; // KP: D F
+            bindings = <&kp AT>;
+            layers = <DEFAULT>;
         };
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <20 21>; // KP: J K
+            key-positions = <CJ CK>; // KP: J K
             bindings = <&kp TAB>;
+            layers = <DEFAULT>;
         };
         combo_lpar {
             timeout-ms = <50>;
-            key-positions = <14 27>; // KP: D V
+            key-positions = <CD CV>; // KP: D V
             bindings = <&kp LPAR>;
+            layers = <DEFAULT>;
         };
         combo_rpar {
             timeout-ms = <50>;
-            key-positions = <21 32>; // KP: K M
+            key-positions = <CK CM>; // KP: K M
             bindings = <&kp RPAR>;
-        };
-        combo_lbkt {
-            timeout-ms = <50>;
-            key-positions = <13 14>; // KP: S D
-            bindings = <&mt LBRC LBKT>;
-        };
-        combo_rbkt {
-            timeout-ms = <50>;
-            key-positions = <21 22>; // KP: K L
-            bindings = <&mt RBRC RBKT>;
+            layers = <DEFAULT>;
         };
         combo_minus {
             timeout-ms = <50>;
-            key-positions = <15 2>; // KP: E F
+            key-positions = <CE CF>; // KP: E F
             bindings = <&mt UNDER MINUS>;
-        };
-        combo_at {
-            timeout-ms = <50>;
-            key-positions = <15 20>; // KP: F J
-            bindings = <&kp AT>;
+            layers = <DEFAULT>;
         };
         combo_amps {
             timeout-ms = <50>;
-            key-positions = <14 21>; // KP: D K
+            key-positions = <CF CJ>; // KP: F J
             bindings = <&kp AMPS>;
+            layers = <DEFAULT>;
         };
         combo_EXCL {
             timeout-ms = <50>;
-            key-positions = <16 19>; // KP: G H
+            key-positions = <CG CH>; // KP: G H
             bindings = <&kp EXCL>;
+            layers = <DEFAULT>;
         };
         combo_equal {
             timeout-ms = <50>;
-            key-positions = <20 9>; // KP: I J
+            key-positions = <CI CJ>; // KP: I J
             bindings = <&mt PLUS EQUAL>;
+            layers = <DEFAULT>;
         };
         combo_dollar {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <CE CR>;
             bindings = <&kp DLLR>; // KP: E R
+            layers = <DEFAULT>;
         };
         combo_percent {
             timeout-ms = <50>;
-            key-positions = <8 9>; // KP: U I
+            key-positions = <CU CI>; // KP: U I
             bindings = <&kp PRCNT>;
+            layers = <DEFAULT>;
         };
         combo_grave {
             timeout-ms = <50>;
-            key-positions = <32 33>; // KP: M ,
+            key-positions = <CM CCOMMA>; // KP: M ,
             bindings = <&mt TILDE GRAVE>;
+            layers = <DEFAULT>;
         };
         combo_pipe {
             timeout-ms = <50>;
-            key-positions = <26 27>; // KP: C V
+            key-positions = <CC CV>; // KP: C V
             bindings = <&mt BSLH PIPE>;
+            layers = <DEFAULT>;
         };
         combo_lbkt2 {
             timeout-ms = <50>;
-            key-positions = <14 16>; // KP: D G
+            key-positions = <CD CG>; // KP: D G
             bindings = <&mt LBRC LBKT>;
+            layers = <DEFAULT>;
         };
         combo_rbkt2 {
             timeout-ms = <50>;
-            key-positions = <19 21>; // KP: H K
+            key-positions = <CH CK>; // KP: H K
             bindings = <&mt RBRC RBKT>;
+            layers = <DEFAULT>;
         };
         combo_under {
             timeout-ms = <50>;
-            key-positions = <3 14>; // KP: R D
+            key-positions = <CR CD>; // KP: R D
             bindings = <&kp UNDER>;
+            layers = <DEFAULT>;
         };
         combo_plus {
             timeout-ms = <50>;
-            key-positions = <8 21>; // KP: U K
+            key-positions = <CU CK>; // KP: U K
             bindings = <&kp PLUS>;
+            layers = <DEFAULT>;
         };
         combo_hash {
             timeout-ms = <50>;
-            key-positions = <3 20>; // KP: R J
+            key-positions = <CR CJ>; // KP: R J
             bindings = <&kp HASH>;
+            layers = <DEFAULT>;
         };
         combo_star {
             timeout-ms = <50>;
-            key-positions = <8 15>; // KP: U F
+            key-positions = <CU CF>; // KP: U F
             bindings = <&kp STAR>;
+            layers = <DEFAULT>;
+        };
+
+        combo_at_at {
+            timeout-ms = <50>;
+            key-positions = <CD CF>; // KP: D F
+            bindings = <&at_at>;
+            layers = <NUM_MODS>;
+        };
+         combo_esc {           
+            timeout-ms = <50>;
+            key-positions = <CD CT>; // KP: D T
+            bindings = <&mt LSHIFT ESC>;
+            layers = <DEFAULT>;
+        };
+        combo_default_layer {           
+            timeout-ms = <50>;
+            key-positions = <CU CI CO CP>; // KP: U I O P
+            bindings = <&to DEFAULT>;
+        };
+        combo_factorio_tab {
+            timeout-ms = <100>;
+            key-positions = <CD CF>; // KP: D F
+            bindings = <&kp TAB>;
+            layers = <FACTORIO_LAYER>;
+        };
+        combo_factorio_esc {
+            timeout-ms = <100>;
+            key-positions = <CE CR>; // KP: E R
+            bindings = <&kp ESC>;
+            layers = <FACTORIO_LAYER>;
         };
     };
 
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        hl: homerow_layers {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_LAYERS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-        };
-        tabspace: tab_space {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TAB_SPACE";
-            #binding-cells = <0>;
-            bindings = <&mt LSHIFT SPACE>, <&kp TAB>;
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
+            hm: homerow_mods {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "HOMEROW_MODS";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <250>;
+                    quick-tap-ms = <QUICK_TAP_MS>;
+                    flavor = "tap-preferred";
+                    bindings = <&kp>, <&kp>;
+            };
+            hl: homerow_layers {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "HOMEROW_LAYERS";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <150>;
+                    quick-tap-ms = <QUICK_TAP_MS>;
+                    flavor = "tap-preferred";
+                    bindings = <&mo>, <&kp>;
+            };
+            tabspace: tab_space  {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "TAB_SPACE";
+                    #binding-cells = <0>;
+                    bindings = <&mt LSHIFT SPACE>, <&kp TAB>;
+                    mods = <(MOD_LALT | MOD_RALT)>;
+            };
+            enie: enie  {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "ENIE";
+                    #binding-cells = <0>;
+                    bindings = <&enie_lower>, <&enie_upper>;
+                    mods = <(MOD_LSFT | MOD_RSFT)>;
+            };
     };
 
     keymap {

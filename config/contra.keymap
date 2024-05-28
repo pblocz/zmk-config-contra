@@ -265,10 +265,10 @@
 // |  SHIFT  |    F7   |   F8    |   F9    |   F10   |   F11   |   F12   |    =    |  PG_DOWN|  HOME   |   END   |  ENTER  |
 // |  CTRL   |    GUI  |    ALT  |  RESET  |    LOWER|    SPACE          |    RAISE|    LEFT |  RIGHT  |   UP    |  DOWN   |
             bindings = <
-    &mt F1 N1   &mt F2 N2   &mt F3 N3    &mt F4 N4      &mt F5 N5     &none &none   &mt F6 N6    &mt F7 N7    &mt F8 N8    &mt F9 N9    &mt F10 N0
-    &mt F4 N4   &mt F5 N5   &mt F6 N6    &none          &none         &none &none   &none        &kp HASH     &kp STAR     &kp CARET    &mt SEMI COLON
-    &mt F7 N7   &mt F8 N8   &mt F9 N9    &mt F10 N0     &none         &none &none   &none        &none        &trans       &trans       &trans
-    &none       &none       &trans       &kp DEL        &trans        &none &none   &trans       &trans       &trans       &none        &none
+    &mt F7 N7   &mt F8 N8   &mt F9 N9    &kp F11        &kp F12       &none &none   &none        &none        &none        &none        &none
+    &mt F4 N4   &mt F5 N5   &mt F6 N6    &none          &none         &none &none   &none        &kp CARET    &none        &none        &mt SEMI COLON
+    &mt F1 N1   &mt F2 N2   &mt F3 N3    &mt F10 N0     &none         &none &none   &enie        &none        &kp M        &key_repeat  &trans
+    &none       &none       &none        &kp DEL        &kp TAB       &none &none   &trans       &trans       &trans       &none        &none
             >;
         };
 
